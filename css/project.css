@@ -43,7 +43,7 @@ section#kykk {
 /* Adjustments to the logo and menu styles can go here */
 
 .logo img {
-    max-width: 150px; /* Adjust as needed */
+    max-width: 220px
 }
 
 .menu ul {
@@ -56,24 +56,26 @@ section#kykk {
 }
 
 .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: 0.75px;
-    /* Add more styles as needed */
+    color: #FFF;
+    font-size: 18px;
 }
 
 
 nav ul {
     list-style: none;
 }
+a.gradient-button:hover {
+    background: linear-gradient(90deg, #f71d0a30 0%, #f00b5d52 100%);
+    transition: 0.5s;
+}
+
 .gradient-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     color: #fff;
-    background-image: linear-gradient(to right, #f51a13, #f00c58); /* Gradient colors */
+    background: linear-gradient(90deg, #F71D0A 0%, #F00B5D 100%);
     border-radius: 50px;
     /* Add vendor prefixes for broader browser support */
 }
@@ -99,18 +101,21 @@ nav ul {
 }
 
 .content h1 {
-    width: 50%;
-    font-size: 60px;
-    color: #fff;
-    letter-spacing: 0.75px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
-
 .content p {
-    font-size: 1.2em;
-    color: lightblue;
-    width: 38%;
-    letter-spacing: 0.75px;
-    line-height: 140%;
+    color: var(--lightBlue, #404250);
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.305%;
+    width: 655px
 }
 
 .cta-button {
@@ -128,28 +133,19 @@ nav ul {
 }
 
 .btn-back-pos {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #fff;
-    background-image: linear-gradient(to right, #f51a13, #f00c58) !important;
-    border-bottom-right-radius: 159px;
-    border-top-right-radius: 159px;
-    width: 56%;
-    height: 250px;
-    cursor: none !important;
-    position: absolute;
-    left: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-image: linear-gradient(to right, #f51a13, #f00c58) !important;
+        /* position: absolute; */
+        left: 0;
+        border-radius: 0px 295px 295px 0px;
+        width: 1262px;
+        height: 474px;
 }
 
-/* Add more CSS styles for your project */
-
 .btn-background{
-    /* background-image: url(../img/btn-img.svg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat; */
+    margin-top: 107px;
     position: relative;
     
 }
@@ -158,6 +154,7 @@ nav ul {
     align-items: center;
     font-size: 56px;
     color: #fff;
+    justify-content: space-between;
 }
 .btn-background button{
     background: none;
@@ -165,7 +162,9 @@ nav ul {
     cursor: pointer;
 }
 .btn-background button img{
-    width: 50%;
+    width: 276px;
+    height: 276px;
+    margin-right: 102px;
     transform: scale(0.75);
     transition: 0.5s;
 }
@@ -189,16 +188,17 @@ nav ul {
 
 .three-columns {
     display: flex;
-    grid-gap: 30px;
+    grid-gap: 78px;
     justify-content: space-between; /* Distributes columns evenly */
 }
 
 .column {
     flex: 1;
-    padding: 20px;
-    border: 1px solid #30313a;
-    border-radius: 5px;
+    padding: 50px;
     background-color: #30313a;
+    width: 480px;
+    height: auto;
+    border-radius: 30px;
 }
 
 .column h2 {
@@ -266,13 +266,14 @@ footer p{
 
 .column p {
     color: #545662;
-font-size: 18px;
+font-family: Mulish;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 139.305%; /* 27.861px */
 }
 .column img{
-    width: 10%;
+    width: 46px;
 }
 
 .title{
@@ -322,16 +323,33 @@ line-height: 139.305%; /* 41.791px */
 .close-menu{
     display: none;
 }
+.menu a:hover {
+    color: #F00B5D;
+    transition: 0.5s;
+}
 
+.text-video h4 {
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 500;
+    padding-left: 230px;
+    text-align: left;
+    margin: 0;
+}
 @media screen and (max-width: 1200px) {
     .container {
       width: 98%;
     }
     .btn-back-pos {
-        width: 70%;
+        width: 100%;
+    border-radius: 0;
     }
     .text-video {
         padding: 12px;
+    }
+
+    .text-video h4 {
+        padding: 0 !important;
     }
   }
 @media screen and (max-width: 1177px) {
@@ -345,13 +363,49 @@ line-height: 139.305%; /* 41.791px */
     }
   }
 @media screen and (max-width: 780px) {
+    .column {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .column img {
+        width: 46px;
+        padding: 50px 50px 0;
+    }
+    .column h4{
+        padding: 0px 50px 0;
+    }
+    .column p{
+        padding: 0px 50px 50px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .content h1 {
+        text-align: center;
+    }
+    .content p {
+        text-align: center;
+    }
+    .home-section {
+        padding: 29px 0;
+    }
     .home{
         padding: 0 !important;
+    }
+    .three-columns {
+        flex-flow: column;
+    }
+    .btn-background h4 {
+        font-size: 64px;
+        padding-left: 30px;
+    }
+    .btn-background {
+        margin-top: 41px;
     }
 .home-section {
     display: flex;
     flex-flow: column;
-    height: 80vh;
+    height: auto;
     align-items: center;
     justify-content: center;
 }
@@ -360,9 +414,13 @@ line-height: 139.305%; /* 41.791px */
     }
     .popup-page {
         max-width: 70% !important;
-    }    
+    }  
+    .btn-background button img {
+        width: 25%;
+        margin-right: 0;
+    }
     .btn-back-pos {
-        height: 166px;
+        height: auto;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
@@ -402,10 +460,7 @@ line-height: 139.305%; /* 41.791px */
     .logo img {
         max-width: 140px;
     }
-    .btn-background h4 {
-        font-size: 30px;
-        padding-left: 30px;
-    }
+    
 
     .footer-top {
         padding: 0 30px;
@@ -462,6 +517,9 @@ line-height: 139.305%; /* 41.791px */
 @media screen and (max-width: 610px) {
     .three-columns {
         flex-flow: column;
+    }
+    .btn-background h4 {
+        font-size: 37px;
     }
   }
 
@@ -522,33 +580,38 @@ color: #fff;    display: flex;
     color: #fff;
 }
 
-
+.working-p {
+    padding: 0 30px !important;
+    color: #FFF !important;
+    text-align: center !important;
+    font-size: 30px !important;
+}
 
 .containers {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    gap: 20px; /* Adjust gap as needed */
-    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 842px;
     margin: 40px auto 0;
 }
 
 .column-lists {
-    height: 380px;
+    width: 384px;
+    height: 476px;
     background: #17171d;
-    /* Additional styling for columns */
+    border-radius: 20px;
 }
 .title-working{
-    color: #fff;
+    color: #FFF;
     font-size: 20px;
-    padding: 20px 0 10px;
+    padding: 25px 0 13px;
     display: block;
 }
 .p-working {
+    color: #545662;
+    font-size: 14px !important;
+    line-height: normal !important;
     margin: 0 !important;
-    font-size: 16px !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: 139.305% !important;
 }
 .flex-column {
     display: flex;
@@ -571,11 +634,7 @@ color: #fff;    display: flex;
     display: flex;
     flex-flow: column;
     overflow-y: scroll;
-    padding: 20px;
     background: #fff;
-}
-.popup-page img {
-    padding-bottom: 20px;
 }
 .popups {
     display: none;
