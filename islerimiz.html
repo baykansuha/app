@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Omotun Page</title>
+    <link rel="stylesheet" href="css/project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="fixed-header container">
+        <div class="container d-flex">
+            <div class="logo">
+                <a href="index.html">
+                     <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                </a>
+            </div>
+            <div class="mobil-menu" id="resMenu">
+                <img src="img/icons8-menu.svg" alt="">
+            </div>
+            <div class="close-menu" id="closeMenu">
+                <img src="img/icons8-close.svg" alt="">
+            </div>
+            <nav id="openMenu" class="menu">
+                <ul>
+                    <li><a href="index.html" class="active-link">Merhaba</a></li>
+                    <li><a href="omotun.html">Omotun</a></li>
+                    <li><a href="islerimiz.html">İşlerimiz</a></li>
+                    <li><a href="iletisim.html" class="gradient-button">Birlikte Çalışalım</a></li>
+                    <!-- Add more menu items -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <p style="text-align: center;padding: 0 30px;">Web sitesi ve mobil arayüz tasarımından, tanıtım videolarına,
+                2D
+                animasyonlardan grafik tasarıma kadar
+                her aşamada yanınızdayız.</p>
+
+            <h4 class="title-text" style="text-align: center;">
+                Öne Çıkan İşlerimiz
+            </h4>
+            <div class="containers">
+                <div>
+                    <div onclick="show('popups')" style="text-align: center;">
+                        <div class="column-lists"
+                            style="background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg');background-size: cover;background-repeat: no-repeat;">
+                        </div>
+                        <label class="title-working" for="">Aslerantav</label>
+                        <p class="p-working">Mobil Uygulama Tasarımı, Mobile App Design</p>
+                    </div>
+                    <div class="popups" id="popups">
+                        <a class="closeIcons" onclick="hide('popups')">Close</a>
+                        <div class="popup-page" id="popup-page">
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div onclick="show('popupImage1')" style="text-align: center;">
+                        <div class="column-lists"
+                            style="background-image: url('https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp');background-size: cover;background-repeat: no-repeat;">
+                        </div>
+                        <label class="title-working" for="">Aslerantav</label>
+                        <p class="p-working">Mobil Uygulama Tasarımı, Mobile App Design</p>
+                    </div>
+                    <div class="popups" id="popupImage1">
+                        <a class="closeIcons" onclick="hide('popupImage1')">Close</a>
+                        <div class="popup-page" id="popup-page">
+                            <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" />
+                            <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" />
+                            <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"
+                style="background: #32333E;height: 1px; width: 100%;margin-top: 130px;margin-bottom: 40px;"></div>
+        </div>
+    </section>
+    <section class="footer-top">
+        <h2>Özelleştirilmiş Çözümler</h2>
+        <p>Her müşteriye özel çözümler sunarak markanızın ihtiyaçlarına uygun tasarımlar oluşturuyoruz.</p>
+        <a href="mailto:test@test.com.tr" class="gradient-button">Teklif Alın</a>
+    </section>
+    <footer>
+        <img src="img/footerLogo.svg" alt="">
+        <p class="linkFooter">
+            <a href="kvkk.html">KVKK Gizlilik Politikası ve Aydınlatma Metni</a> |
+            <a href="twitter.com"> X </a>|
+            <a href="youtube.com"> YouTube</a>
+        </p>
+        <p class="color-32333E">© 2024 Omotun Dijital Tasarım Stüdyosu.</p>
+        <img src="img/footerImg.svg" alt="">
+    </footer>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
