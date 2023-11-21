@@ -8,7 +8,10 @@ body {
     background-color: #1e1f26;
     font-family: 'Mulish', sans-serif;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
 }
@@ -17,11 +20,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 80px 20px 120px;
 }
-
+.header-container.d-flex {
+    width: 1600px;
+    margin: 0 auto;
+}
+.container-three {
+    width: 1600px;
+    margin: 0 auto;
+}
+.container-three .title{
+    padding-top: 114px;
+    padding-bottom: 50px;
+}
 .container {
-    width: 1200px;
+    width: 1442px;
     margin: 0 auto;
 }
 
@@ -29,6 +43,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.m-90 {
+    margin-top: 90px !important;
+    margin-bottom: 40px !important;
 }
 .fixed-header {
     top: 0;
@@ -48,11 +66,7 @@ section#kykk {
 
 .menu ul {
     list-style: none;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px; /* Adjust spacing between menu items */
+    display: flex;grid-gap: 48px
 }
 
 .menu a {
@@ -115,7 +129,8 @@ a.gradient-button:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 139.305%;
-    width: 655px
+    width: 655px;
+    margin-top:30px
 }
 
 .cta-button {
@@ -155,20 +170,20 @@ a.gradient-button:hover {
     font-size: 56px;
     color: #fff;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 .btn-background button{
     background: none;
     border: none;
     cursor: pointer;
 }
-.btn-background button img{
-    width: 276px;
-    height: 276px;
-    margin-right: 102px;
+.text-video img{
     transform: scale(0.75);
     transition: 0.5s;
 }
-.btn-background button img:hover{
+.text-video img:hover{
     transform: scale(1);
     transition: 0.5s;
 }
@@ -228,11 +243,14 @@ a.gradient-button:hover {
 }
 
 .footer-top p {
+    margin: 25px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    margin: 11px 0;
-    color: #fff;
+    line-height: 139.305%;
 }
 
 footer {
@@ -250,11 +268,25 @@ footer img:nth-child(1){
 .color-32333E{
     color: #32333E;
 }
+.footer-button{
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(90deg, #F71D0A 0%, #F00B5D 100%);
+    border-radius: 50px;
+    width: 178px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 footer p{
     margin: 0 0 11px;
 }
 .linkFooter, .linkFooter a{
     color: #545662;
+    text-align: center;
 }
 
 .column h4 {
@@ -286,7 +318,27 @@ font-weight: 400;
 line-height: 139.305%; /* 41.791px */
 }
 
-
+.p-link {
+    margin-left: 21px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.305%;
+}
+.btn-omotun{
+    width: 235px !important;
+    display: block;
+    text-align: center;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.col-img img{
+    width: 522px;
+    height: 946px;
+}
 .popup {
     display: none;
     position: fixed;
@@ -336,6 +388,21 @@ line-height: 139.305%; /* 41.791px */
     text-align: left;
     margin: 0;
 }
+.video-con {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+@media screen and (max-width: 1600px) {
+    .container-three {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1200px) {
     .container {
       width: 98%;
@@ -363,6 +430,19 @@ line-height: 139.305%; /* 41.791px */
     }
   }
 @media screen and (max-width: 780px) {
+    .text-video {
+        padding: 0;
+    }
+    .btn-background {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-con img {
+        width: 20%;
+    }
     .column {
         width: 100%;
         padding: 0px;
@@ -382,6 +462,22 @@ line-height: 139.305%; /* 41.791px */
 @media screen and (max-width: 780px) {
     .content h1 {
         text-align: center;
+    }
+    .column-lists {
+        width: 100% !important;
+        height: 220px !important;
+        background: #17171d;
+        border-radius: 20px;
+    }
+    .containers {
+        width: 100% !important;
+    }
+    .btn-omotun {
+        margin: 0 auto;
+    }
+    .col-img img {
+        width: 50%;
+        height: auto;
     }
     .content p {
         text-align: center;
@@ -419,18 +515,23 @@ line-height: 139.305%; /* 41.791px */
         width: 25%;
         margin-right: 0;
     }
+    .container.text-video img {
+        width: 14%;
+    }
     .btn-back-pos {
-        height: auto;
+        height: 180px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
     .btn-background .container{
-        justify-content: center;
+        justify-content: center;grid-gap: 30px;padding: 0;
     }
 }
 @media screen and (max-width: 740px) {
-    
+    #about h2 {
+        font-size: 38px !important;
+    }
     .col-md-2 {
         flex-flow: column-reverse;
     }
@@ -482,6 +583,16 @@ line-height: 139.305%; /* 41.791px */
         color: lightblue;
         width: 100%;
     }
+    #about p{
+        font-size: 20px !important;
+    }
+    .m-90 {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    .p-link {
+        text-align: left !important;
+    }
     .menu{
         display: none;
         position: absolute;
@@ -489,23 +600,25 @@ line-height: 139.305%; /* 41.791px */
         z-index: 999999;
         left: 0;
         width: 100%;
-        background: #fff;
+        background: #22232b;
     }
 
     .menu ul {
         flex-flow: column;
         width: 100%;
         padding: 0;
+        grid-gap: 0px;
     }
     .menu ul li {
         text-align: center;
-        padding-bottom: 20px;
+        padding: 18px 0px;
     }
     .menu ul li:last-child {
-        padding: 0 !important;
+        width: 70%;
+    margin: 10px auto 16px;
     }
     .menu ul li a {
-        color: #545662;
+        color: #fff;
     }
     .menu .gradient-button {
         display: block;
@@ -526,8 +639,12 @@ line-height: 139.305%; /* 41.791px */
 
   .title-kykk, .title-text{
     color: #F00B5D;
-margin: 0;
-font-size: 40px;}
+
+font-family: Mulish;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
 
   #kykk p {
     color: #fff;
@@ -564,13 +681,22 @@ font-style: normal;
 font-weight: 400;
 line-height: 139.305%; /* 27.861px */
 }
-
+.title-text-islerimiz {
+    padding: 80px 0;
+    color: #F00B5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 #about{
-    margin-top: 130px;
+    margin-top: 15px;
 }
 
 .img-contact{
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 color: #fff;    display: flex;
     align-items: center;
     grid-gap: 30px;
@@ -581,18 +707,39 @@ color: #fff;    display: flex;
 }
 
 .working-p {
-    padding: 0 30px !important;
     color: #FFF !important;
     text-align: center !important;
+    font-family: Mulish !important;
     font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
 }
 
+.contact-p {
+    color: var(--lightBlue, #404250);
+font-family: Mulish;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 139.305%; /* 41.791px */
+margin-bottom: 33px;
+}
+.img-contact a{
+    color: #FFF;
+
+font-family: Mulish;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 139.305%;
+}
 .containers {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     width: 842px;
-    margin: 40px auto 0;
+    margin: 0px auto 0;
 }
 
 .column-lists {
@@ -628,13 +775,17 @@ color: #fff;    display: flex;
 }
 .popup-page{ 
     position: absolute;
-    max-width: 33%;
+    max-width: 70%;
     max-height: 80%;
     z-index: 99999;
     display: flex;
     flex-flow: column;
     overflow-y: scroll;
     background: #fff;
+    display: block;
+}
+.popup-page img {
+    width: 100%
 }
 .popups {
     display: none;

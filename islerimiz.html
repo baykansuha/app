@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header class="fixed-header container">
-        <div class="container d-flex">
+    <header class="fixed-header ">
+        <div class="header-container d-flex">
             <div class="logo">
                 <a href="index.html">
                      <a href="index.html">
@@ -26,9 +26,9 @@
             </div>
             <nav id="openMenu" class="menu">
                 <ul>
-                    <li><a href="index.html" class="active-link">Merhaba</a></li>
+                    <li><a href="index.html">Merhaba</a></li>
                     <li><a href="omotun.html">Omotun</a></li>
-                    <li><a href="islerimiz.html">İşlerimiz</a></li>
+                    <li><a href="islerimiz.html" class="active-link">İşlerimiz</a></li>
                     <li><a href="iletisim.html" class="gradient-button">Birlikte Çalışalım</a></li>
                     <!-- Add more menu items -->
                 </ul>
@@ -43,11 +43,12 @@
                 animasyonlardan grafik tasarıma kadar
                 her aşamada yanınızdayız.</p>
 
-            <h4 class="title-text" style="text-align: center;">
+            <h4 class="title-text-islerimiz" style="text-align: center;">
                 Öne Çıkan İşlerimiz
             </h4>
             <div class="containers">
                 <div>
+                    <!-- resim popup açılma alanı onclick="show('farklı isimler gelecek')"-->
                     <div onclick="show('popups')" style="text-align: center;">
                         <div class="column-lists"
                             style="background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg');background-size: cover;background-repeat: no-repeat;">
@@ -55,14 +56,16 @@
                         <label class="title-working" for="">Aslerantav</label>
                         <p class="p-working">Mobil Uygulama Tasarımı, Mobile App Design</p>
                     </div>
+                    <!-- show, id ve hide fonksiyon isimleri aynı olacak -->
                     <div class="popups" id="popups">
-                        <a class="closeIcons" onclick="hide('popups')">Close</a>
+                        <a class="closeIcons" onclick="hide('popups')">X</a>
                         <div class="popup-page" id="popup-page">
                             <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
                             <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
                             <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" />
                         </div>
                     </div>
+                    <!-- resim popup açılma alanı -->
                 </div>
                 <div>
                     <div onclick="show('popupImage1')" style="text-align: center;">
@@ -73,7 +76,7 @@
                         <p class="p-working">Mobil Uygulama Tasarımı, Mobile App Design</p>
                     </div>
                     <div class="popups" id="popupImage1">
-                        <a class="closeIcons" onclick="hide('popupImage1')">Close</a>
+                        <a class="closeIcons" onclick="hide('popupImage1')">X</a>
                         <div class="popup-page" id="popup-page">
                             <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" />
                             <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" />
@@ -84,13 +87,13 @@
             </div>
 
             <div class="line"
-                style="background: #32333E;height: 1px; width: 100%;margin-top: 130px;margin-bottom: 40px;"></div>
+                style="background: #32333E;height: 1px; width: 100%;margin-top: 130px;margin-bottom: 68px;"></div>
         </div>
     </section>
     <section class="footer-top">
         <h2>Özelleştirilmiş Çözümler</h2>
         <p>Her müşteriye özel çözümler sunarak markanızın ihtiyaçlarına uygun tasarımlar oluşturuyoruz.</p>
-        <a href="mailto:test@test.com.tr" class="gradient-button">Teklif Alın</a>
+        <a href="#" class="footer-button">Teklif Alın</a>
     </section>
     <footer>
         <img src="img/footerLogo.svg" alt="">
