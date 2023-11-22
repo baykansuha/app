@@ -101,7 +101,7 @@ a.gradient-button:hover {
     
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     z-index: -1;
 
 }
@@ -444,15 +444,27 @@ line-height: 139.305%; /* 41.791px */
     }
   }
 @media screen and (max-width: 780px) {
+    .back-img{
+        top: -174px;
+        height: 90vh
+    }
+    .container-three .title {
+        padding-top: 80px;
+    }
+    .home-section {
+        padding-bottom: 0 !important;
+    }
     .content h1 {
         padding-right: 0;
     }
     .video-con {
         width: 100%;
-        bottom: 55px;
+        bottom: 34px;
+        left: 0;
     }
     .text-video h4 {
         font-size: 49px;
+        padding-left: 20px !important;
     }
     .text-video {
         padding: 0;
@@ -466,6 +478,7 @@ line-height: 139.305%; /* 41.791px */
     }
     .video-con img {
         width: 20%;
+        padding-right: 12px;
     }
     .column {
         width: 100%;
@@ -574,7 +587,7 @@ line-height: 139.305%; /* 41.791px */
 
 .mobil-menu img, .close-menu img {
     position: absolute;
-    left: 24px;
+    right: 24px;
     width: 8%;
     top: 16px;
 }
@@ -604,7 +617,6 @@ line-height: 139.305%; /* 41.791px */
     }
     .content p {
         font-size: 1.2em;
-        color: lightblue;
         width: 100%;
     }
     #about p{
@@ -849,6 +861,7 @@ line-height: 139.305%;
     bottom: 0;
     right: 0;
     z-index: -1;
+    background: #0000003b;
   }
   
 
